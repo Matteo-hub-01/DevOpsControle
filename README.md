@@ -26,5 +26,4 @@ Ce projet est destiné à valider les connaissances en DevOps des élèves de 3�
 * **Code Size** ![Code Size](https://img.shields.io/badge/code%20size-4.81%20KB-blue) - Code size (`gh_code_size`)
 * **Build Status** ![Build](https://img.shields.io/badge/build-passing-brightgreen) - TravisCI.com (`travis_com`)
 * **Build Status** ![Build](https://img.shields.io/badge/build-passing-brightgreen) - TravisCI.org key (`travis_org`)
-![Tests](./badges/jest-coverage-badge.svg)
 
