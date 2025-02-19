@@ -22,18 +22,15 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test -- --json --outputFile=test-results.json
+        run: npm test
 
       - name: Generate Test Badge
-        uses: jpb06/jest-badges-action@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          output: "./badges"
+        run: npm run test:badge
 
-      - name: Commit Test Badge
+      - name: Commit and push test badge
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add ./badges
+          git add badges/
           git commit -m "Update test badge" || echo "No changes to commit"
           git push
